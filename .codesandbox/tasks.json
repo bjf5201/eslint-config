@@ -1,0 +1,54 @@
+{
+    // These tasks will run in order when initializing your CodeSandbox project.
+    "setupTasks": [
+      {
+        "command": "pnpm install",
+        "name": "Installing Dependencies"
+      }
+    ],
+
+    // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+    "tasks": {
+      "dev": {
+        "name": "dev",
+        "command": "pnpm dev",
+        "runAtStart": true
+      },
+      "build": {
+        "name": "build",
+        "command": "pnpm build"
+      },
+      "lint": {
+        "name": "lint",
+        "command": "pnpm lint"
+      },
+      "lint:fix": {
+        "name": "lint:fix",
+        "command": "pnpm lint:fix"
+      },
+      "test": {
+        "name": "test",
+        "command": "pnpm test"
+      },
+      "typegen": {
+        "name": "typegen",
+        "command": "pnpm typegen"
+      },
+      "typecheck": {
+        "name": "typecheck",
+        "command": "pnpm typecheck"
+      },
+      "prepack": {
+        "name": "prepack",
+        "command": "pnpm prepack"
+      },
+      "release": {
+        "name": "release",
+        "command": "pnpm release"
+      },
+      "release:dry": {
+        "name": "release:dry",
+        "command": "pnpm release:dry"
+      }
+    }
+  }
